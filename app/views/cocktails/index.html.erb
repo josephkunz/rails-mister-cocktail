@@ -2,7 +2,9 @@
   <div class="banner">
     <h1>Cocktail Page</h1>
   </div>
-
+  <div class="add-cocktail-btn">
+    <%= link_to "Add new Cocktail", 'cocktails/new', class: "btn btn-primary" %>
+  </div>
   <div class="list">
     <% @cocktails.each do |cocktail| %>
         <li class="list_link_style"><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
@@ -10,5 +12,4 @@
   </div>
 
 
-   <%= link_to "Add new Cocktail", 'cocktails/new' %>
 </div>
