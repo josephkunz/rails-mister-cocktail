@@ -1,13 +1,17 @@
-<h1> <%= @cocktail.name %></h1>
+<div class="container">
+<!-- header -->
+  <h1> <%= @cocktail.name %></h1>
+ <!-- list -->
+ <div class="list">
+  <% @doses.each do |dose| %>
+     <li><%= dose.description %></li>
+
+    <% end %>
+  </div>
+<!-- navigation -->
+  <%= link_to 'Add a Dose', new_cocktail_dose_path(@cocktail) %>
 
 
-<% @doses.each do |dose| %>
-   <li><%= dose.description %></li>
+  <%= link_to 'Back to Cocktails', root_path %>
 
-<% end %>
-
-<%= link_to 'Add a Dose', new_cocktail_dose_path(@cocktail) %>
-
-<br>
-
-<%= link_to 'Back to Cocktails', root_path %>
+</div>

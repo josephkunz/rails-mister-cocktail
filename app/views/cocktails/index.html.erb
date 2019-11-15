@@ -1,11 +1,14 @@
-<h1>Cocktail Page</h1>
+<div class="container">
+  <div class="banner">
+    <h1>Cocktail Page</h1>
+  </div>
 
-<% @cocktails.each do |cocktail| %>
+  <div class="list">
+    <% @cocktails.each do |cocktail| %>
+        <li class="list_link_style"><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+    <% end %>
+  </div>
 
 
-       <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-       <% end %>
-
-<br>
-
- <%= link_to "Add new Cocktail", 'cocktails/new' %>
+   <%= link_to "Add new Cocktail", 'cocktails/new' %>
+</div>
