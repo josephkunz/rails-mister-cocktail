@@ -10,6 +10,15 @@
 
 <div class="list">
     <% @cocktails.each do |cocktail| %>
-        <li class="list_link_style"><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+
+        <div class="card-product">
+          <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
+
+          <div class="card-product-infos">
+            <li class="list_link_style"><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+          </div>
+        </div>
+
+
     <% end %>
   </div>
