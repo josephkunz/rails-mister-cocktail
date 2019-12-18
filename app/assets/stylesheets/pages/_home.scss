@@ -1,17 +1,48 @@
 // Specific CSS for your home-page
-.card-product {
-  overflow: hidden;
-  height: 120px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+//banner
+.banner {
+  background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), asset-url('background');
+  height: 400px;
+  background-size: cover;
+  border-radius: .5px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  display: flex;
+  justify-content: center;
+  padding: 150px 0;
+
+  h1 {
+  color: white;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  font-size: 60px;
+  font-weight: bold;
+
+}
+
+}
+
+// cards GRID
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+
+}
+
+// card product
+.card-product {
+  overflow: hidden;
+  background: #efcb68;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px
 }
 
 .card-product img {
   height: 100%;
-  width: 120px;
+  width: 160px;
   object-fit: cover;
 }
 
@@ -31,4 +62,25 @@
 
 .card-product .card-product-infos {
   padding: 16px;
+}
+
+
+// cocktail list
+.list {
+  list-style: none;
+  list-align: center;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  border-radius: .5%;
+
+}
+// cocktail list
+.list_link_style {
+  text-decoration: none;
+
+  font-size: 20px;
+  opacity: 0.8;
+  color: #3c3d4d;
+
 }
