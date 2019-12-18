@@ -3,22 +3,22 @@
     <h1>Cocktail Page</h1>
     <p></p>
     <div class="add-cocktail-btn">
-    <%= link_to "Start now", "cocktails/new", class: "btn btn-flat" %>
-  </div>
+      <%= link_to "Start now", "cocktails/new", class: "btn btn-flat" %>
+    </div>
   </div>
 </div>
 
-<div class="list">
-    <% @cocktails.each do |cocktail| %>
-
-        <div class="card-product">
-          <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
-
-          <div class="card-product-infos">
-            <li class="list_link_style"><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-          </div>
-        </div>
-
-
-    <% end %>
+<div class="containersssssssss">
+  <div class="cards">
+    <div class="list">
+        <% @cocktails.each do |cocktail| %>
+            <div class="card-product">
+                <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
+              <div class="card-product-infos">
+                <li class="list_link_style"><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+              </div>
+            </div>
+        <% end %>
+    </div>
   </div>
+</div>
