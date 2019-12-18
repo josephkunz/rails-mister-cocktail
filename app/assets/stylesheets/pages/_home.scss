@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   padding: 150px 0;
+  margin-bottom: 20px;
 
   h1 {
   color: white;
@@ -25,24 +26,24 @@
 // cards GRID
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
-
 }
 
 // card product
 .card-product {
   overflow: hidden;
-  background: #efcb68;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 16px
+  border-radius: 2px;
+  height: 100%;
+  width: 300px;
 }
 
 .card-product img {
-  height: 100%;
-  width: 160px;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -73,7 +74,6 @@
   background-color: white;
   box-shadow: 0 10px 30px rgba(0,0,0,.2);
   border-radius: .5%;
-
 }
 // cocktail list
 .list_link_style {
@@ -82,5 +82,4 @@
   font-size: 20px;
   opacity: 0.8;
   color: #3c3d4d;
-
 }
